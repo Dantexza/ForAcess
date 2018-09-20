@@ -4,66 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgorund"
+    android:background="@color/background"
     tools:context=".Login">
 
     <Button
         android:id="@+id/button"
         android:layout_width="139dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="148dp"
-        android:layout_marginEnd="48dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="52dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/login"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
-    <android.support.v7.widget.AppCompatEditText
+    <EditText
         android:id="@+id/editText2"
-        android:layout_width="274dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="306dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginStart="54dp"
         android:ems="10"
         android:hint="@string/Email"
-        android:textColor="@color/white"
         android:inputType="textEmailAddress"
+        android:textColor="@color/white"
         android:textColorHint="@color/textcolor"
-        app:backgroundTint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
-    <android.support.v7.widget.AppCompatEditText
+    <EditText
         android:id="@+id/editText"
-        android:layout_width="276dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="47dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginStart="54dp"
         android:hint="@string/senha"
+        android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/textcolor"
-        android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:backgroundTint="@color/black" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="184dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_width="260dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
